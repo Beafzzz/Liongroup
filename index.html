@@ -11,19 +11,23 @@
 </head>
 <body>
     <div class="top-menu">
-        <div class="right-side">
-            <button class="top-menu-button top-menu-button-active">Ремонт и отделка</button>
-            <button class="top-menu-button">Дизайн и проектирование</button>
-        </div>
-        <div class="left-side">
-            <button class="top-menu-button">О компании</button>
-            <button class="top-menu-button">Наши работы </button>
-            <button class="top-menu-button">Цены</button>
-            <button class="top-menu-button">Акции</button>
-            <button class="top-menu-button">Контакты</button>
-            <p class="tel-contact">+7 495 150 24 93</p>
+        <div>
+            <div class="left-side">
+                <button class="top-menu-button top-menu-button-active">Ремонт и отделка</button>
+                <button class="top-menu-button">Дизайн и проектирование</button>
+            </div>
+            <div class="right-side">
+                <button class="top-menu-button">О компании</button>
+                <button class="top-menu-button">Наши работы </button>
+                <button class="top-menu-button">Цены</button>
+                <button class="top-menu-button">Акции</button>
+                <button class="top-menu-button">Контакты</button>
+                <p class="tel-contact">+7 495 150 24 93</p>
+            </div>
         </div>
     </div>
+    <hr style="width: 100%; border: none; background-color: #E3E8ED; height: 1px;">
+
     <header>
         <div class="up-side">
             <img src="./assets/img/logo.svg">
@@ -75,18 +79,96 @@
             <p class="head-text">—  Беспокоим один раз, когда пора заселяться. Гарантируем, что по ходу проекта цена в договоре не увеличится.</p>
         </div>
         <div class="slider-container">
-            <video id="video-slider" src="./assets/video/interior-1.mp4" autoplay muted loop></video>
-            <div class="controls">
-                <button class="playPause" id="play"><img src="./assets/img/play.svg" width="15px" height="20px"></button>
-                <button class="playPause" id="pause"><img src="./assets/img/pause.svg" width="20px" height="20px"></button>
+            <div class="slider-track" id="sliderTrack">
+                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
             </div>
+    
             <div class="slider-controls">
-                <button class="prevNext" id="prev-btn"><img src="./assets/img/left-arrow.svg"></button>
-                <button class="prevNext" id="next-btn"><img src="./assets/img/right-arrow.svg"></button>
+                <button class="control-btn" onclick="prevSlide()"><img src="./assets/img/left-arrow.svg"></button>
+                <button class="control-btn" onclick="nextSlide()"><img src="./assets/img/right-arrow.svg"></button>
+            </div>
+
+            <div class="text-box">
+                <div class="description">
+                    <p class="head-text">Ремонт квартиры в Москве и области </p>
+                    <p class="main-text">Фиксированная смета и сроки работ по доступной цене</p>
+                </div>
+                <div>
+                    <p class="slide-counter">01 / 05</p>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="key-areas">
+        <p class="head-text">Ключевые направления</p>
+        <div class="areas-buttons">
+            <p class="areas-button areas-button-1">Ремонт квартир</p>
+            <p class="areas-button areas-button-2">Коммерческая недвижимость</p>
+            <p class="areas-button areas-button-3">Ремонт домов</p>
+            <p class="areas-button areas-button-4">Прочие услуги</p>
+        </div>
+        <div class="areas-items">
+            <div class="areas-items-inner">
+                <div class="areas-item">
+                    <img src="./assets/img/cont-pic-1.png">
+                    <p class="head-text">Ремонт однушки</p>
+                    <p class="price">от 10 000 ₽ за м2</p>
+                </div>
+                <div class="areas-item">
+                    <img src="./assets/img/cont-pic-2.png">
+                    <p class="head-text">Капитальный ремонт</p>
+                    <p class="price">от 15 000 ₽ за м2</p>
+                </div>
+                <div class="areas-item">
+                    <img src="./assets/img/cont-pic-3.png">
+                    <p class="head-text">Дизайнерский ремонт</p>
+                    <p class="price">от 20 000 ₽ за м2</p>
+                </div>
+                <div class="areas-item">
+                    <img src="./assets/img/cont-pic-3.png">
+                    <p class="head-text">Дизайнерский ремонт</p>
+                    <p class="price">от 20 000 ₽ за м2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="with-work-us">
+        <p>При работе с нами вы получаете</p>
+        <div>
+            <div>
+                <p>0</p>
+                <p>рублей свыше сметы</p>
+                <p>Цена указывается в договоре
+                    и НЕ изменяется в процессе.</p>
+            </div>
+            <div>
+                <p>12</p>
+                <p>дней просрочки</p>
+                <p>Гарантируем соблюдение сроков, прописанных
+                    в договоре. Платим
+                    за просрочки.</p>
+            </div>
+            <div>
+                <p>253</p>
+                <p>потраченых нервов</p>
+                <p>Мы согласовываем все вопросы с соседями, подрядчиками, БТИ или управляющими компаниями.</p>
+            </div>
+            <div>
+                <p>1214</p>
+                <p>проблем после ремонта</p>
+                <p>10 лет гарантии на сантехнику
+                    и электрику, 2 года гарантии на отделку. В течение ремонта
+                    полная страховка квартиры.
+                    </p>
+            </div>
+        </div>
+    </div>
     <script src="./assets/scripts/main.js"></script>
 </body>
 </html>

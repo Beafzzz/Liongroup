@@ -3,7 +3,6 @@ const dropdownMenu = document.getElementById("dropdown")
 
 function OpenMenu(){
     dropdownMenu.style.display = "flex"
-    dropdownMenu.style.position = "relative"
 }
 
 function CloseMenu(){
@@ -14,32 +13,50 @@ remCvart.addEventListener("mouseover", OpenMenu)
 dropdownMenu.addEventListener("mouseover", OpenMenu)
 dropdownMenu.addEventListener("mouseout", CloseMenu)
 
+const sliderTrack = document.getElementById('sliderTrack');
+const slides = document.querySelectorAll('.slider-item');
+const slideCounter = document.querySelector(".slide-counter")
 
-// Получаем элементы
-const videoPlayer = document.getElementById('video-slider');
-const playPauseButton = document.getElementById('playPause');
-const prevButton = document.getElementById('prev-btn');
-const nextButton = document.getElementById('next-btn');
+let currentIndex = 0;
+const slideWidth = slides[0].offsetWidth;
 
-// Массив с путями к видео
-const videos = ['interior-1.mp4', 'interior-2.mp4', 'interior-3.mp4', 'interior-4.mp4', 'interior-5.mp4'];
-let currentVideoIndex = 0;
-
-// Функция для переключения видео
-function changeVideo(index) {
-    videoPlayer. = videos[index];
-    videoPlayer.load();
-    videoPlayer.play();
+function updateSlider() {
+    sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    slideCounter.textContent = `0${currentIndex+1} / 05`
 }
 
-// Обработчик для кнопки "Предыдущее видео"
-prevButton.addEventListener('click', () => {
-    currentVideoIndex = currentVideoIndex - 1;
-    changeVideo(currentVideoIndex);
-});
+function nextSlide() {
+    if(currentIndex!=4){
+        currentIndex += 1;
+    } else {currentIndex=0}
+    updateSlider();
+}
 
-// Обработчик для кнопки "Следующее видео"
-nextButton.addEventListener('click', () => {
-    currentVideoIndex = currentVideoIndex + 1;
-    changeVideo(currentVideoIndex);
+function prevSlide() {
+    if(currentIndex!=0){
+        currentIndex -= 1;
+    } else {currentIndex=4}
+    updateSlider();
+}
+
+updateSlider();
+
+document.querySelector('.key-areas .areas-items').addEventListener('wheel', (e) => {
+    e.preventDefault();
+  
+  const inner = document.querySelector('.key-areas .areas-items-inner');
+  const delta = e.deltaY;
+  
+  let currentScrollX = parseInt(inner.dataset.scrollX || 0);
+  
+  if (delta > 0) {
+    currentScrollX -= 50;
+  } else {
+    currentScrollX += 50;
+  }
+  
+  currentScrollX = Math.max(Math.min(currentScrollX, 0), -550);
+  
+  inner.style.transform = `translateX(${currentScrollX}px)`;
+  inner.dataset.scrollX = currentScrollX;
 });
