@@ -366,7 +366,7 @@ header > .up-side > .buttons > .text:hover{
 }
 
 .with-work-us-inner{
-    width: 1580px;
+    width: 1560px;
     margin: 0 auto;
 }
 
@@ -425,7 +425,7 @@ header > .up-side > .buttons > .text:hover{
     padding: 157px 0px;
 }
 
-.our-projects .head-text{
+.our-projects > .head-text{
     font-size: 67.5px;
     font-weight: 700;
     color: #1A1A1A;
@@ -436,4 +436,108 @@ header > .up-side > .buttons > .text:hover{
     display: flex;
     flex-direction: column;
     gap: 56px;
+}
+
+.our-projects-inner .project{
+    display: flex;
+    gap: 42px;
+}
+
+.our-projects-inner .project>div>.head-text{
+    font-size: 31px;
+    color: #1A1A1A;
+    font-weight: 700;
+}
+
+.our-projects-inner .project .grid-layout{
+    display: grid;
+    gap: 34px;
+    margin-top: 45px;
+    margin-bottom: 56px;
+    grid-template-columns: repeat(2, 159px);
+    grid-template-rows: repeat(2, 63.33px);
+}
+
+.our-projects-inner .project .grid-layout .head-text{
+    font-size: 22.5px;
+    color: #97A1B0;
+    margin-bottom: 5px;
+}
+
+.our-projects-inner .project .grid-layout .main-text{
+    font-size: 25px;
+    color: #1A1A1A;
+}
+
+.our-projects-inner .project .more-about{
+    font-size: 20px;
+    color: #1A1A1A;
+    font-weight: 700;
+    border-bottom: solid 1px #E3E8ED;
+    padding-bottom: 3px;
+    width: fit-content;
+}
+
+.our-projects-inner .project:hover >div>.head-text{
+    color: #29ABE2;
+}
+
+.our-projects-inner .project:hover .more-about{
+    cursor: pointer;
+    color: #29ABE2;
+}
+
+.our-projects-inner button{
+    cursor: pointer;
+    border: solid 1px #E3E8ED;
+    width: 403.5px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #1A1A1A;
+    font-weight: 700;
+}
+
+.what{
+    width: 1560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 157px;
+}
+
+.what > div{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.what > div > p{
+    font-size: 67.5px;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: -0.5px;
+    border-bottom: solid 1px #E3E8ED;
+}
+
+.what > p{
+    font-size: 25px;
+    color: #1A1A1A;
+}
+
+.our-client{
+    width: 1560px;
+    margin: 0 auto;
+}
+
+.our-client > .head-text{
+    font-size: 67.5px;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: -0.5px;
 }
