@@ -44,19 +44,19 @@ updateSlider();
 document.querySelector('.key-areas .areas-items').addEventListener('wheel', (e) => {
     e.preventDefault();
   
-  const inner = document.querySelector('.key-areas .areas-items-inner');
-  const delta = e.deltaY;
-  
-  let currentScrollX = parseInt(inner.dataset.scrollX || 0);
-  
-  if (delta > 0) {
-    currentScrollX -= 50;
-  } else {
-    currentScrollX += 50;
-  }
-  
-  currentScrollX = Math.max(Math.min(currentScrollX, 0), -550);
-  
-  inner.style.transform = `translateX(${currentScrollX}px)`;
-  inner.dataset.scrollX = currentScrollX;
+    const inner = document.querySelector('.key-areas .areas-items-inner');
+    const delta = e.deltaY;
+    
+    let currentScrollX = parseInt(inner.dataset.scrollX || 0);
+    
+    if (delta > 0) {
+        currentScrollX -= 50;
+    } else {
+        currentScrollX += 50;
+    }
+    
+    currentScrollX = Math.max(Math.min(currentScrollX, 0), -550);
+    
+    inner.style.transform = `translateX(${currentScrollX}px)`;
+    inner.dataset.scrollX = currentScrollX;
 });

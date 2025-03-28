@@ -278,7 +278,7 @@ header > .up-side > .buttons > .text:hover{
     color: #1A1A1A;
 }
 
-.key-areas .areas-buttons{
+.rem-com-rem-pr-items{
     display: flex;
     margin-top: 78px;
     margin-bottom: 56px;
@@ -286,33 +286,33 @@ header > .up-side > .buttons > .text:hover{
     border-bottom: solid 1px #E3E8ED;
 }
 
-.key-areas .areas-buttons .areas-button{
+.rem-com-rem-pr-items .rem-com-rem-pr-item{
     font-size: 25px;
     color: #97A1B0;
     height: 53px;
     text-wrap: nowrap;
 }
 
-.key-areas .areas-buttons .areas-button-1{
+.rem-com-rem-pr-items .rem-com-rem-pr-item-1{
     cursor: pointer;
     font-weight: 700;
     box-shadow: 0 5px 0 0 black;
     color: #1A1A1A;
 }
 
-.key-areas .areas-buttons .areas-button-2{
+.rem-com-rem-pr-items .rem-com-rem-pr-item-2{
     width: 378px;
 }
 
-.key-areas .areas-buttons .areas-button-3{
+.rem-com-rem-pr-items .rem-com-rem-pr-item-3{
     width: 177px;
 }
 
-.key-areas .areas-buttons .areas-button-4{
+.rem-com-rem-pr-items .rem-com-rem-pr-item-4{
     width: 181px;
 }
 
-.key-areas .areas-buttons .areas-button:hover{
+.rem-com-rem-pr-items .rem-com-rem-pr-item:hover{
     cursor: pointer;
     font-weight: 700;
     box-shadow: 0 5px 0 0 black;
@@ -358,8 +358,82 @@ header > .up-side > .buttons > .text:hover{
 .with-work-us{
     width: 100%;
     background-color: #1A1A1A;
+    padding: 90px 0px;
 }
 
 .with-work-us p{
     color: white;
+}
+
+.with-work-us-inner{
+    width: 1580px;
+    margin: 0 auto;
+}
+
+.with-work-us-inner > .head-text{
+    font-size: 67.5px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 67px;
+}
+
+.with-work-us-inner .mean-items{
+    display: flex;
+    gap: 45px;
+}
+
+.with-work-us-inner .mean-items .mean-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.with-work-us-inner .mean-items .mean-item-1{
+    width: 337px;
+}
+.with-work-us-inner .mean-items .mean-item-2{
+    width: 358px;
+}
+.with-work-us-inner .mean-items .mean-item-3{
+    width: 358px;
+}
+.with-work-us-inner .mean-items .mean-item-4{
+    width: 377px;
+}
+
+.with-work-us-inner .mean-items .big-head-text{
+    font-size: 67.5px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-wrap: nowrap;
+}
+
+.with-work-us-inner .mean-items .head-text{
+    font-size: 31px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 23.5px;
+}
+
+.with-work-us-inner .mean-items .main-text{
+    font-size: 22.5px;
+    color: #97A1B0;
+}
+
+.our-projects{
+    width: 1560px;
+    margin: 0 auto;
+    padding: 157px 0px;
+}
+
+.our-projects .head-text{
+    font-size: 67.5px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-bottom: 78px;
+}
+
+.our-projects-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
 }
