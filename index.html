@@ -1,259 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liongroup</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Liongroup</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="top-menu">
-        <div>
-            <div class="left-side">
-                <button class="top-menu-button top-menu-button-active">Ремонт и отделка</button>
-                <button class="top-menu-button">Дизайн и проектирование</button>
-            </div>
-            <div class="right-side">
-                <button class="top-menu-button">О компании</button>
-                <button class="top-menu-button">Наши работы </button>
-                <button class="top-menu-button">Цены</button>
-                <button class="top-menu-button">Акции</button>
-                <button class="top-menu-button">Контакты</button>
-                <p class="tel-contact">+7 495 150 24 93</p>
-            </div>
-        </div>
-    </div>
-    <hr style="width: 100%; border: none; background-color: #E3E8ED; height: 1px;">
-
-    <header>
-        <div class="up-side">
-            <img src="./assets/img/logo.svg">
-            <div class="buttons">
-                <p class="text" id="rem-cvart">Ремонт квартир</p>
-                <p class="text">Ремонт домов</p>
-                <p class="text">Коммерческий ремонт</p>
-                <p class="text negative">Калькулятор ремонта</p>
-            </div>
-        </div>
-        <div class="dropdown-menu" id="dropdown">
-                <div>
-                    <p class="head-text">комплексный</p>
-                    <p class="main-text">Капитальный</p>
-                    <p class="main-text">Евроремонт</p>
-                    <p class="main-text">Элитный</p>
-                    <p class="main-text crown-icon"><img src="./assets/img/crown.png">Под ключ</p>
-                    <p class="main-text">Дизайнерский</p>
-                </div>
-                <div>
-                    <p class="head-text">ТиповОй</p>
-                    <p class="main-text">В студии</p>
-                    <p class="main-text">1-комнатный</p>
-                    <p class="main-text">2-комнатный</p>
-                    <p class="main-text">3-комнатный</p>
-                    <p class="main-text">4-комнатный</p>
-                    <p class="main-text">В новостройке</p>
-                </div>
-                <div>
-                    <p class="head-text">Полезное</p>
-                    <p class="main-text">Схема и сроки ремонта</p>
-                    <p class="main-text">Гарантия на работы</p>
-                    <p class="main-text">Договор на услуги</p>
-                    <p class="main-text">Прайс-лист</p>
-                </div>
-                <div>
-                    <img src="./assets/img/drop-img.png">
-                    <p class="head-text-img">Какой ремонт выбрать?</p>
-                    <p class="main-text-img">Узнайте чем отличается «Капитальный»
-                        от «Элитного» и почему наши клиенты
-                        выбирают «Под ключ» </p>
-                </div>
-        </div>
-    </header>
-
-    <div class="true-rem">
-        <div class="text-box">
-            <p class="head-text-big">Честный ремонт квартир <br>с полным сопровождением</p>
-            <p class="head-text">—  Беспокоим один раз, когда пора заселяться. Гарантируем, что по ходу проекта цена в договоре не увеличится.</p>
-        </div>
-        <div class="slider-container">
-            <div class="slider-track" id="sliderTrack">
-                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-                <div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-            </div>
-    
-            <div class="slider-controls">
-                <button class="control-btn" onclick="prevSlide()"><img src="./assets/img/left-arrow.svg"></button>
-                <button class="control-btn" onclick="nextSlide()"><img src="./assets/img/right-arrow.svg"></button>
-            </div>
-
-            <div class="text-box">
-                <div class="description">
-                    <p class="head-text">Ремонт квартиры в Москве и области </p>
-                    <p class="main-text">Фиксированная смета и сроки работ по доступной цене</p>
-                </div>
-                <div>
-                    <p class="slide-counter">01 / 05</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="key-areas">
-        <p class="head-text">Ключевые направления</p>
-        <div class="rem-com-rem-pr-items">
-            <p class="rem-com-rem-pr-item rem-com-rem-pr-item-1">Ремонт квартир</p>
-            <p class="rem-com-rem-pr-item rem-com-rem-pr-item-2">Коммерческая недвижимость</p>
-            <p class="rem-com-rem-pr-item rem-com-rem-pr-item-3">Ремонт домов</p>
-            <p class="rem-com-rem-pr-item rem-com-rem-pr-item-4">Прочие услуги</p>
-        </div>
-        <div class="areas-items">
-            <div class="areas-items-inner">
-                <div class="areas-item">
-                    <img src="./assets/img/cont-pic-1.png">
-                    <p class="head-text">Ремонт однушки</p>
-                    <p class="price">от 10 000 ₽ за м<sup>2</sup></p>
-                </div>
-                <div class="areas-item">
-                    <img src="./assets/img/cont-pic-2.png">
-                    <p class="head-text">Капитальный ремонт</p>
-                    <p class="price">от 15 000 ₽ за м<sup>2</sup></p>
-                </div>
-                <div class="areas-item">
-                    <img src="./assets/img/cont-pic-3.png">
-                    <p class="head-text">Дизайнерский ремонт</p>
-                    <p class="price">от 20 000 ₽ за м<sup>2</sup></p>
-                </div>
-                <div class="areas-item">
-                    <img src="./assets/img/cont-pic-3.png">
-                    <p class="head-text">Дизайнерский ремонт</p>
-                    <p class="price">от 20 000 ₽ за м<sup>2</sup></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="with-work-us">
-        <div class="with-work-us-inner">
-            <p class="head-text">При работе с нами вы получаете</p>
-            <div class="mean-items">
-                <div class="mean-item mean-item-1">
-                    <p class="big-head-text">0</p>
-                    <p class="head-text">рублей свыше сметы</p>
-                    <p class="main-text">Цена указывается в договоре<br>
-                        и НЕ изменяется в процессе.</p>
-                </div>
-                <div class="mean-item mean-item-2">
-                    <p class="big-head-text">12</p>
-                    <p class="head-text">дней просрочки</p>
-                    <p class="main-text">Гарантируем соблюдение сроков, прописанных<br>
-                        в договоре. Платим<br>
-                        за просрочки.</p>
-                </div>
-                <div class="mean-item mean-item-3">
-                    <p class="big-head-text">253</p>
-                    <p class="head-text">потраченых нервов</p>
-                    <p class="main-text">Мы согласовываем все вопросы с соседями, подрядчиками, БТИ или управляющими компаниями.</p>
-                </div>
-                <div class="mean-item mean-item-4">
-                    <p class="big-head-text">1214</p>
-                    <p class="head-text">проблем после ремонта</p>
-                    <p class="main-text">10 лет гарантии на сантехнику<br>
-                        и электрику, 2 года гарантии на отделку. В течение ремонта<br>
-                        полная страховка квартиры.
-                        </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="our-projects">
-        <p class="head-text">Наши проекты</p>
-        <div class="our-projects-inner">
-            <div class="rem-com-rem-pr-items" style="margin-top: 0px;">
-                <p class="rem-com-rem-pr-item rem-com-rem-pr-item-1">Ремонт квартир</p>
-                <p class="rem-com-rem-pr-item rem-com-rem-pr-item-2">Коммерческая недвижимость</p>
-                <p class="rem-com-rem-pr-item rem-com-rem-pr-item-3">Ремонт домов</p>
-                <p class="rem-com-rem-pr-item rem-com-rem-pr-item-4">Прочие услуги</p>
-            </div>
-
-            <div class="project">
-                <img src="./assets/img/our-project-1.png">
-                <div>
-                    <p class="head-text">Ремонт элитной 5-комнатной<br>
-                        квартиры в Одинцово </p>
-                    <div class="grid-layout">
-                        <div>
-                            <p class="head-text">Площадь</p>
-                            <p class="main-text">250 м<sup>2</sup></p>
-                        </div>
-                        <div>
-                            <p class="head-text">На материалы</p>
-                            <p class="main-text">4 000 000 ₽</p>
-                        </div>
-                        <div>
-                            <p class="head-text">Срок</p>
-                            <p class="main-text">6 месяцев</p>
-                        </div>
-                        <div>
-                            <p class="head-text">За работу</p>
-                            <p class="main-text">2 000 000 ₽</p>
-                        </div>
-                    </div>
-                    <p class="more-about">Подробнее о проекте</p>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="./assets/img/our-project-2.png">
-                <div class="right-side">
-                    <p class="head-text">Ремонт небольшой однушки<br>
-                        для архитектора</p>
-                    <div class="grid-layout">
-                        <div>
-                            <p class="head-text">Площадь</p>
-                            <p class="main-text">250 м<sup>2</sup></p>
-                        </div>
-                        <div>
-                            <p class="head-text">На материалы</p>
-                            <p class="main-text">4 000 000 ₽</p>
-                        </div>
-                        <div>
-                            <p class="head-text">Срок</p>
-                            <p class="main-text">6 месяцев</p>
-                        </div>
-                        <div>
-                            <p class="head-text">За работу</p>
-                            <p class="main-text">2 000 000 ₽</p>
-                        </div>
-                    </div>
-                    <p class="more-about">Подробнее о проекте</p>
-                </div>
-            </div>
-
-            <button>Посмотреть больше проектов<img src="./assets/img/black-arrow-right.svg"></button>
-
-        </div>
-    </div>
-
-    <div class="what">
-        <div>
-            <p>У вас уже есть смета от подрядчиков?</p>
-            <img src="./assets/img/arrow-right-blue.svg">
-        </div>
-        <p>Бесплатно сделаем аудит и проверим на «порядочность» будущих исполнителей.</p>
-    </div>
-
-    <div class="our-client">
-        <p class="head-text">Клиенты о нас</p>
-        <p>Вот несколько историй от людей, которые доверили нам своё жильё.</p>
-    </div>
-
-    <script src="./assets/scripts/main.js"></script>
+	<div class="top-menu">
+		<div>
+			<div class="left-side">
+				<button class="top-menu-button top-menu-button-active">Ремонт и отделка</button>
+				<button class="top-menu-button">Дизайн и проектирование</button>
+			</div>
+			<div class="right-side">
+				<button class="top-menu-button">О компании</button>
+				<button class="top-menu-button">Наши работы</button>
+				<button class="top-menu-button">Цены</button>
+				<button class="top-menu-button">Акции</button>
+				<button class="top-menu-button">Контакты</button>
+				<p class="tel-contact">+7 495 150 24 93</p>
+			</div>
+		</div>
+	</div>
+	<hr style="width:100%;border:none;background-color:#E3E8ED;height:1px">
+	<header>
+		<div class="up-side"><img src="./assets/img/logo.svg">
+			<div class="buttons">
+				<p class="text" id="rem-cvart">Ремонт квартир</p>
+				<p class="text">Ремонт домов</p>
+				<p class="text">Коммерческий ремонт</p>
+				<p class="text negative">Калькулятор ремонта</p>
+			</div>
+		</div>
+		<div class="dropdown-menu" id="dropdown">
+			<div>
+				<p class="head-text">комплексный</p>
+				<p class="main-text">Капитальный</p>
+				<p class="main-text">Евроремонт</p>
+				<p class="main-text">Элитный</p>
+				<p class="main-text crown-icon"><img src="./assets/img/crown.png">Под ключ</p>
+				<p class="main-text">Дизайнерский</p>
+			</div>
+			<div>
+				<p class="head-text">ТиповОй</p>
+				<p class="main-text">В студии</p>
+				<p class="main-text">1-комнатный</p>
+				<p class="main-text">2-комнатный</p>
+				<p class="main-text">3-комнатный</p>
+				<p class="main-text">4-комнатный</p>
+				<p class="main-text">В новостройке</p>
+			</div>
+			<div>
+				<p class="head-text">Полезное</p>
+				<p class="main-text">Схема и сроки ремонта</p>
+				<p class="main-text">Гарантия на работы</p>
+				<p class="main-text">Договор на услуги</p>
+				<p class="main-text">Прайс-лист</p>
+			</div>
+			<div><img src="./assets/img/drop-img.png">
+				<p class="head-text-img">Какой ремонт выбрать?</p>
+				<p class="main-text-img">Узнайте чем отличается «Капитальный» от «Элитного» и почему наши клиенты выбирают «Под ключ»</p>
+			</div>
+		</div>
+	</header>
+	<div class="true-rem">
+		<div class="text-box">
+			<p class="head-text-big">Честный ремонт квартир
+				<br>с полным сопровождением</p>
+			<p class="head-text">— Беспокоим один раз, когда пора заселяться. Гарантируем, что по ходу проекта цена в договоре не увеличится.</p>
+		</div>
+		<div class="slider-container">
+			<div class="slider-track" id="sliderTrack">
+				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
+			</div>
+			<div class="slider-controls">
+				<button class="control-btn" onclick="prevSlide()"><img src="./assets/img/left-arrow.svg" width="22.5px" height="22px"></button>
+				<button class="control-btn" onclick="nextSlide()"><img src="./assets/img/right-arrow.svg" width="22.5px" height="22px"></button>
+			</div>
+			<div class="text-box">
+				<div class="description">
+					<p class="head-text">Ремонт квартиры в Москве и области</p>
+					<p class="main-text">Фиксированная смета и сроки работ по доступной цене</p>
+				</div>
+				<div>
+					<p class="slide-counter">01 / 05</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="key-areas">
+		<p class="head-text">Ключевые направления</p>
+		<div class="rem-com-rem-pr-items">
+			<p class="rem-com-rem-pr-item rem-com-rem-pr-item-1">Ремонт квартир</p>
+			<p class="rem-com-rem-pr-item rem-com-rem-pr-item-2">Коммерческая недвижимость</p>
+			<p class="rem-com-rem-pr-item rem-com-rem-pr-item-3">Ремонт домов</p>
+			<p class="rem-com-rem-pr-item rem-com-rem-pr-item-4">Прочие услуги</p>
+		</div>
+		<div class="areas-items">
+			<div class="areas-items-inner">
+				<div class="areas-item"><img src="./assets/img/cont-pic-1.png">
+					<p class="head-text">Ремонт однушки</p>
+					<p class="price">от 10 000 ₽ за м<sup>2</sup></p>
+				</div>
+				<div class="areas-item"><img src="./assets/img/cont-pic-2.png">
+					<p class="head-text">Капитальный ремонт</p>
+					<p class="price">от 15 000 ₽ за м<sup>2</sup></p>
+				</div>
+				<div class="areas-item"><img src="./assets/img/cont-pic-3.png">
+					<p class="head-text">Дизайнерский ремонт</p>
+					<p class="price">от 20 000 ₽ за м<sup>2</sup></p>
+				</div>
+				<div class="areas-item"><img src="./assets/img/cont-pic-3.png">
+					<p class="head-text">Дизайнерский ремонт</p>
+					<p class="price">от 20 000 ₽ за м<sup>2</sup></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="with-work-us">
+		<div class="with-work-us-inner">
+			<p class="head-text">При работе с нами вы получаете</p>
+			<div class="mean-items">
+				<div class="mean-item mean-item-1">
+					<p class="big-head-text">0</p>
+					<p class="head-text">рублей свыше сметы</p>
+					<p class="main-text">Цена указывается в договоре
+						<br>и НЕ изменяется в процессе.</p>
+				</div>
+				<div class="mean-item mean-item-2">
+					<p class="big-head-text">12</p>
+					<p class="head-text">дней просрочки</p>
+					<p class="main-text">Гарантируем соблюдение сроков, прописанных
+						<br>в договоре. Платим
+						<br>за просрочки.</p>
+				</div>
+				<div class="mean-item mean-item-3">
+					<p class="big-head-text">253</p>
+					<p class="head-text">потраченых нервов</p>
+					<p class="main-text">Мы согласовываем все вопросы с соседями, подрядчиками, БТИ или управляющими компаниями.</p>
+				</div>
+				<div class="mean-item mean-item-4">
+					<p class="big-head-text">1214</p>
+					<p class="head-text">проблем после ремонта</p>
+					<p class="main-text">10 лет гарантии на сантехнику
+						<br>и электрику, 2 года гарантии на отделку. В течение ремонта
+						<br>полная страховка квартиры.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-projects">
+		<p class="head-text">Наши проекты</p>
+		<div class="our-projects-inner">
+			<div class="rem-com-rem-pr-items" style="margin-top:0">
+				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-1">Ремонт квартир</p>
+				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-2">Коммерческая недвижимость</p>
+				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-3">Ремонт домов</p>
+				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-4">Прочие услуги</p>
+			</div>
+			<div class="project"><img src="./assets/img/our-project-1.png">
+				<div>
+					<p class="head-text">Ремонт элитной 5-комнатной
+						<br>квартиры в Одинцово</p>
+					<div class="grid-layout">
+						<div>
+							<p class="head-text">Площадь</p>
+							<p class="main-text">250 м<sup>2</sup></p>
+						</div>
+						<div>
+							<p class="head-text">На материалы</p>
+							<p class="main-text">4 000 000 ₽</p>
+						</div>
+						<div>
+							<p class="head-text">Срок</p>
+							<p class="main-text">6 месяцев</p>
+						</div>
+						<div>
+							<p class="head-text">За работу</p>
+							<p class="main-text">2 000 000 ₽</p>
+						</div>
+					</div>
+					<p class="more-about">Подробнее о проекте</p>
+				</div>
+			</div>
+			<div class="project"><img src="./assets/img/our-project-2.png">
+				<div class="right-side">
+					<p class="head-text">Ремонт небольшой однушки
+						<br>для архитектора</p>
+					<div class="grid-layout">
+						<div>
+							<p class="head-text">Площадь</p>
+							<p class="main-text">250 м<sup>2</sup></p>
+						</div>
+						<div>
+							<p class="head-text">На материалы</p>
+							<p class="main-text">4 000 000 ₽</p>
+						</div>
+						<div>
+							<p class="head-text">Срок</p>
+							<p class="main-text">6 месяцев</p>
+						</div>
+						<div>
+							<p class="head-text">За работу</p>
+							<p class="main-text">2 000 000 ₽</p>
+						</div>
+					</div>
+					<p class="more-about">Подробнее о проекте</p>
+				</div>
+			</div>
+			<button>Посмотреть больше проектов<img src="./assets/img/black-arrow-right.svg"></button>
+		</div>
+	</div>
+	<div class="what">
+		<div>
+			<p>У вас уже есть смета от подрядчиков?</p><img src="./assets/img/arrow-right-blue.svg"></div>
+		<p>Бесплатно сделаем аудит и проверим на «порядочность» будущих исполнителей.</p>
+	</div>
+	<div class="our-client">
+		<div class="top">
+			<div class="text-box">
+				<p class="head-text">Клиенты о нас</p>
+				<p class="main-text">Вот несколько историй от людей, которые доверили нам своё жильё.</p>
+			</div>
+			<div class="slider-cl-controls">
+				<button class="control-cl-btn" onclick="prevClSlide()"><img src="./assets/img/left-arrow.svg" width="22.5px" height="22px"></button>
+				<button class="control-cl-btn" onclick="nextClSlide()"><img src="./assets/img/right-arrow.svg" width="22.5px" height="22px"></button>
+			</div>
+		</div>
+		<div class="slider-cl-container">
+			<div id="slider-cl-track">
+				<div class="slider-cl-item">
+					<div class="image-vid"><img src="./assets/img/video-1.png"><button></button></div>
+					<div>
+						<p class="head-text">Видеоотзыв от Андрея  Константинова</p>
+						<p class="main-text">Ремонт коттеджа в Сколково</p>
+					</div>
+				</div>
+				<div class="slider-cl-item">
+					<div class="image-vid"><img src="./assets/img/video-2.png"><button></button></div>
+					<div>
+						<p class="head-text">Видеоотзыв от Семьи Костенко</p>
+						<p class="main-text">Ремонт квартиры в Медведково</p>
+					</div>
+				</div>
+				<div class="slider-cl-item">
+					<div class="image-vid"><img src="./assets/img/video-1.png"><button></button></div>
+					<div>
+						<p class="head-text">Видеоотзыв от Андрея  Константинова</p>
+						<p class="main-text">Ремонт коттеджа в Сколково</p>
+					</div>
+				</div>
+				<div class="slider-cl-item">
+					<div class="image-vid"><img src="./assets/img/video-2.png"><button></button></div>
+					<div>
+						<p class="head-text">Видеоотзыв от Семьи Костенко</p>
+						<p class="main-text">Ремонт квартиры в Медведково</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-insta">
+		<div class="our-insta-inner">
+			<div class="top">
+				<p class="head-text">Наш Instagram</p>
+				<p class="insta-tag">@remontlion</p>
+			</div>
+			<div class="bottom">
+				<div><img src="./assets/img/insta-1.png">
+					<button><img src="./assets/img/insta-icon-blue.svg"></button>
+				</div>
+				<div><img src="./assets/img/insta-2.png">
+					<button><img src="./assets/img/insta-icon-blue.svg"></button>
+				</div>
+				<div><img src="./assets/img/insta-3.png">
+					<button><img src="./assets/img/insta-icon-blue.svg"></button>
+				</div>
+				<div><img src="./assets/img/insta-4.png">
+					<button><img src="./assets/img/insta-icon-blue.svg"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="our-partner">
+		<div class="our-partner-inner">
+			<p>Проверенные партнёры</p>
+			<div><img src="./assets/img/partner.png"> <img src="./assets/img/partner.png"> <img src="./assets/img/partner.png"> <img src="./assets/img/partner.png"> <img src="./assets/img/partner.png"> <img src="./assets/img/partner.png"></div>
+		</div>
+	</div>
+	<div class="our-qualities">
+		<div class="quality-1">
+			<p class="head-text">Стратегия</p>
+			<p class="main-text">Все наши креативные идеи рождаются по поведению
+				<br>простых людей. Только так создаются работы, способные изменить бренд. Для того, чтобы бренд стал культовым, он становится простым, как разговор двух приятелей в лифте.
+				<br>За это, прежде всего, отвечает стратегия — и наш стратегический отдел.</p>
+		</div>
+		<div class="quality-2">
+			<p class="head-text">Креатив</p>
+			<p class="main-text">Рекламный креатив всегда преследует одну цель и решает конкретную задачу. Для решения задач мы создаем
+				<br>истории. Иногда великая идея может скрываться в
+				<br>простой, маленькой и очевидной истине. главное ее
+				<br>первым обнаружить. Неважно, какой будет будет кампания, как она будет выглядеть или звучать, важно, какое влияние
+				<br>она окажет на людей.
+				<br>
+				<br>И как дальше о ней кто-то расскажет кому-то — и даже лучше, если расскажет своими словами.
+				<br>
+				<br>Никто не смотрит рекламу. Люди смотрят только то, что им интересно. И только иногда — это реклама.</p>
+		</div>
+		<div class="quality-3">
+			<p class="head-text">Крафт</p>
+			<p class="main-text">Как и в художественной литературе, так и в любом другом виде искусства, важнейший элемент — это деталь.
+				<br>Творческое ремесло, которым и является реклама,
+				<br>невозможно без кропотливой работы над деталями.
+				<br>Поэтому 90% того, что мы придумываем — мы делаем
+				<br>сами.</p>
+		</div>
+	</div>
+	<script src="./assets/scripts/main.js"></script>
 </body>
 </html>
