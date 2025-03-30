@@ -30,12 +30,17 @@
 	</div>
 	<hr style="width:100%;border:none;background-color:#E3E8ED;height:1px">
 	<header>
-		<div class="up-side"><img src="./assets/img/logo.svg">
+		<div class="up-side">
+			<img src="./assets/img/logo.svg">
 			<div class="buttons">
 				<p class="text" id="rem-cvart">Ремонт квартир</p>
 				<p class="text">Ремонт домов</p>
 				<p class="text">Коммерческий ремонт</p>
 				<p class="text negative">Калькулятор ремонта</p>
+			</div>
+			<div class="mobile-buttons">
+				<img src="./assets/img/phone-icon.png">
+				<img src="./assets/img/menu-icon.png">
 			</div>
 		</div>
 		<div class="dropdown-menu" id="dropdown">
@@ -71,30 +76,27 @@
 	</header>
 	<div class="true-rem">
 		<div class="text-box">
-			<p class="head-text-big">Честный ремонт квартир
-				<br>с полным сопровождением</p>
+			<p class="head-text-big">Честный ремонт квартир <br> с полным сопровождением</p>
 			<p class="head-text">— Беспокоим один раз, когда пора заселяться. Гарантируем, что по ходу проекта цена в договоре не увеличится.</p>
 		</div>
 		<div class="slider-container">
 			<div class="slider-track" id="sliderTrack">
-				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-				<div class="slider-item"><img src="./assets/img/slider-item-1.png"></div>
-			</div>
-			<div class="slider-controls">
-				<button class="control-btn" onclick="prevSlide()"><img src="./assets/img/left-arrow.svg" width="22.5px" height="22px"></button>
-				<button class="control-btn" onclick="nextSlide()"><img src="./assets/img/right-arrow.svg" width="22.5px" height="22px"></button>
+				<div class="slider-item"><img id="slider-img" src="./assets/img/slider-item-1.png"><button></button></div>
+				<div class="slider-item"><img id="slider-img" src="./assets/img/slider-item-1.png"><button></button></div>
+				<div class="slider-item"><img id="slider-img" src="./assets/img/slider-item-1.png"><button></button></div>
+				<div class="slider-item"><img id="slider-img" src="./assets/img/slider-item-1.png"><button></button></div>
+				<div class="slider-item"><img id="slider-img" src="./assets/img/slider-item-1.png"><button></button></div>
 			</div>
 			<div class="text-box">
 				<div class="description">
-					<p class="head-text">Ремонт квартиры в Москве и области</p>
+					<p class="head-text"><span>Ремонт квартиры в Москве</span><br><span>и области</span></p>
 					<p class="main-text">Фиксированная смета и сроки работ по доступной цене</p>
 				</div>
-				<div>
-					<p class="slide-counter">01 / 05</p>
-				</div>
+				<p class="slide-counter">01 / 05</p>
+			</div>
+			<div class="slider-controls">
+				<button class="control-btn" onclick="prevSlide()"><img src="./assets/img/left-arrow.svg"></button>
+				<button class="control-btn" onclick="nextSlide()"><img src="./assets/img/right-arrow.svg"></button>
 			</div>
 		</div>
 	</div>
@@ -168,10 +170,11 @@
 				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-3">Ремонт домов</p>
 				<p class="rem-com-rem-pr-item rem-com-rem-pr-item-4">Прочие услуги</p>
 			</div>
-			<div class="project"><img src="./assets/img/our-project-1.png">
+			<div class="project">
+				<div class="img-1"></div>
 				<div>
-					<p class="head-text">Ремонт элитной 5-комнатной
-						<br>квартиры в Одинцово</p>
+					<p class="head-text">Ремонт элитной <br class="br2"> 5-комнатной
+						<br class="br1">квартиры в Одинцово</p>
 					<div class="grid-layout">
 						<div>
 							<p class="head-text">Площадь</p>
@@ -193,7 +196,8 @@
 					<p class="more-about">Подробнее о проекте</p>
 				</div>
 			</div>
-			<div class="project"><img src="./assets/img/our-project-2.png">
+			<div class="project">
+				<div class="img-2"></div>
 				<div class="right-side">
 					<p class="head-text">Ремонт небольшой однушки
 						<br>для архитектора</p>
@@ -326,6 +330,49 @@
 				<br>сами.</p>
 		</div>
 	</div>
+
+	<footer>
+		<div class="footer-inner">
+			<div class="top">
+				<div class="text-box">
+					<p class="head-text">Мы на связи ежедневно с 08:00 до 00:00 </p>
+					<p class="main-text">+7 495 150-24-93</p>
+				</div>
+				<button>Вызывать замерщика</button>
+			</div>
+			<hr style="background-color: rgba(227, 232, 237, 0.12); border: none; width: 100%; height: 1px; margin-top: 56px; margin-bottom: 45px;">
+			<div class="bottom">
+				<div class="left">
+					<p class="email">hello@remontlion.ru</p>
+					<p class="address">г. Зеленоград<br>
+						проспект Алексея Генарлова, 1<br>
+						строение 1, офис 215Б</p>
+					<p class="author">Задизайнено в <span>Simplexx.Agency</span></p>
+				</div>
+				<div class="right">
+					<div>
+						<p class="about-us">О компании</p>
+						<p>Наши работы</p>
+						<p>Цены</p>
+						<p>Акции</p>
+						<p>Контакты</p>
+					</div>
+					<div>
+						<p>Ремонт квартир</p>
+						<p>Ремонт домов</p>
+						<p>Коммерческий ремонт</p>
+						<p>Калькулятор ремонта</p>
+					</div>
+					<div>
+						<p>Дизайн интерьера</p>
+						<p>Визуализация</p>
+						<p>Подбор материалов</p>
+						<p>Авторский надзор</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="./assets/scripts/main.js"></script>
 </body>
 </html>
