@@ -65,7 +65,7 @@ const sliderClTrack = document.getElementById("slider-cl-track");
 const slidesCl = document.querySelectorAll(".slider-cl-item");
 let currentClIndex = 0;
 
-function updateSlider() {
+function updateClSlider() {
   sliderClTrack.style.transform = `translateX(-${(currentClIndex * 802)}px)`;
 }
 
@@ -75,7 +75,7 @@ function nextClSlide() {
   } else {
     currentClIndex = 0;
   }
-  updateSlider();
+  updateClSlider();
 }
 
 function prevClSlide() {
@@ -84,5 +84,5 @@ function prevClSlide() {
   } else {
     currentClIndex = 2;
   }
-  updateSlider();
+  updateClSlider();
 }

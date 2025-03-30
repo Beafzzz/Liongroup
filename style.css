@@ -549,7 +549,7 @@ header > .up-side > .buttons > .text:hover {
 	gap: 3px;
 }
 
-.our-client .slider-controls .control-btn {
+.our-client .slider-controls #slider-cl-track .control-btn {
 	width: 67.47px;
 	height: 67.47px;
 	background-color: #1A1A1A;
@@ -572,6 +572,7 @@ header > .up-side > .buttons > .text:hover {
 
 .our-client .slider-cl-container{
 	overflow: hidden;
+	position: relative;
 	width: 1560px;
 }
 
@@ -583,15 +584,45 @@ header > .up-side > .buttons > .text:hover {
 
 .slider-cl-container #slider-cl-track .slider-cl-item{
 	width: 760px;
+	position: relative;
+}
+
+.slider-cl-item .image-vid{
+	position: relative;
 }
 
 .slider-cl-item .image-vid button{
+	cursor: pointer;
 	position: absolute;
 	width: 101px;
 	height: 101px;
-	left: 0.5px;
 	border: none;
+	bottom: 40%;
+	left: 45%;
 	background-color: white;
+}
+
+.slider-cl-item .text-box{
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-top: 34px;
+}
+
+.slider-cl-item .text-box .head-text{
+	font-size: 31px;
+	font-weight: 700;
+	color: #1A1A1A;
+}
+
+.slider-cl-item .text-box .head-text:hover{
+	color: #29ABE2;
+	cursor: pointer;
+}
+
+.slider-cl-item .text-box .main-text{
+	font-size: 25px;
+	color: #97A1B0;
 }
 
 .slider-cl-item .image-vid button::after{
