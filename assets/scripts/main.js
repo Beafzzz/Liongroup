@@ -68,7 +68,7 @@ let lastTime = 0;
 keyAreas.addEventListener("wheel", (e) => {
   e.preventDefault();
   const delta = e.deltaY;
-  scrollX -= delta * 3; // Увеличиваем скорость прокрутки
+  scrollX += delta; // Увеличиваем скорость прокрутки
   updateScroll();
 });
 
