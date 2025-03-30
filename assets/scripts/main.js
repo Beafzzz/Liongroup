@@ -19,7 +19,7 @@ const sliderTrack = document.getElementById("sliderTrack");
 const slides = document.querySelectorAll(".slider-item");
 const sliderImgs = document.querySelectorAll("#slider-img")
 const slideCounter = document.querySelector(".slide-counter");
-const screenWidth = window.screen.width
+let screenWidth = window.screen.width
 let currentIndex = 0;
 const slideWidth = slides[0].offsetWidth;
 
@@ -117,26 +117,80 @@ function updateScroll() {
 
 const sliderClTrack = document.getElementById("slider-cl-track");
 const slidesCl = document.querySelectorAll(".slider-cl-item");
+const slideClCounter = document.querySelector(".slide-cl-counter");
 let currentClIndex = 0;
 
+if(screenWidth <= 400){
+	sliderClTrack.style.gap = "0px";
+} else{
+	sliderClTrack.style.gap = "42px";
+}
+
+sliderClTrack.style.gap = 42;
+
 function updateClSlider() {
-  sliderClTrack.style.transform = `translateX(-${(currentClIndex * 802)}px)`;
+  if(screenWidth <= 400){
+    sliderClTrack.style.transform = `translateX(-${(currentClIndex * slidesCl[0].offsetWidth)}px)`;
+  } else if(screenWidth >= 400 && currentClIndex>=1){
+    sliderClTrack.style.transform = `translateX(-${(currentClIndex * slidesCl[0].offsetWidth)+85}px)`;
+  } else{
+    sliderClTrack.style.transform = `translateX(-${(currentClIndex * slidesCl[0].offsetWidth)}px)`;
+  }
+  slideClCounter.textContent = `0${currentClIndex+1} / 04`;
 }
 
 function nextClSlide() {
-  if (currentClIndex < 2) {
+  if (currentClIndex < 2 && screenWidth > 400) {
     currentClIndex++;
-  } else {
+  } else if((currentClIndex < 3 && screenWidth <= 400)){
+    currentClIndex++;
+  } else{
     currentClIndex = 0;
   }
   updateClSlider();
 }
 
 function prevClSlide() {
-  if (currentClIndex > 0) {
+  if (currentClIndex < 2 && screenWidth > 400) {
     currentClIndex--;
-  } else {
-    currentClIndex = 2;
+  } else if((currentClIndex <= 3 && screenWidth <= 400)){
+    currentClIndex--;
+  } 
+  if(currentClIndex < 0){
+    currentClIndex = 3;
   }
   updateClSlider();
+}
+
+const instaTrack = document.querySelector(".bottom-inner");
+const instaSlides = document.querySelectorAll(".slider-inst-item");
+const slideInstCounter = document.querySelector(".slide-inst-counter");
+let currentInstIndex = 0;
+
+function updateInstSlider() {
+  if(currentInstIndex>=1){
+    instaTrack.style.transform = `translateX(-${(currentInstIndex * instaSlides[0].offsetWidth)+30}px)`;
+  } else{
+    instaTrack.style.transform = `translateX(-${(currentInstIndex * instaSlides[0].offsetWidth)}px)`;
+  }
+  slideInstCounter.textContent = `0${currentInstIndex+1} / 04`;
+}
+
+function nextInstSlide() {
+  if(currentInstIndex < 3){
+    currentInstIndex++;
+  } else{
+    currentInstIndex = 0;
+  }
+  updateInstSlider();
+}
+
+function prevInstSlide() {
+  if(currentInstIndex <= 3){
+    currentInstIndex--;
+  } 
+  if(currentInstIndex < 0){
+    currentInstIndex = 3;
+  }
+  updateInstSlider();
 }
